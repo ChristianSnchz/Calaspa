@@ -1,0 +1,291 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+
+#Logo
+{
+	margin:auto;
+	width:25%;
+}
+#formulario
+{
+	
+	/*background-color:rgba(47,79,79,0.40);*/
+	background-color: rgba(0,0,0,0.22);
+	padding: 10px 20px;
+	box-sizing: border-box;
+	border-radius: 7px;
+	margin:auto;
+	
+}
+#formulario input
+{
+	width: 100%;
+	padding:7px;
+	margin-bottom: 18px;
+	box-sizing: border-box;
+	font-size: 17px;
+	border:none;
+}
+#formulario2
+{
+	
+	background-color:rgba(0,0,0,0.22);
+	padding: 10px 20px;
+	box-sizing: border-box;
+	border-radius: 7px;
+	margin:auto;
+	
+}
+#formulario2 input
+{
+	width: 100%;
+	padding:5px;
+	box-sizing: border-box;
+	font-size: 15px;
+	border:none;
+}
+#seccion1
+{
+	background-image:url(seccion1.jpg);
+	background-size: 100% 100%; 	
+	background-attachment: fixed;
+}
+#seccion3
+{
+	background-image:url(seccion3.jpg);
+	background-size: 100% 100%; 	
+	background-attachment: fixed;
+}
+#seccion2
+{
+	background-color:rgba(255,215,0,0.70);
+	
+}
+#seccion4
+{
+	background-image:url(seccion4.jpg);
+	background-size: 100% 100%; 	
+	background-attachment: fixed;
+}
+#seccion5
+{
+	background-color:rgba(255,215,0,0.70);
+}
+#seccion6
+{
+	background-image:url(seccion6.jpg);
+	background-size: 100% 100%; 	
+	background-attachment: fixed;
+}
+#seccion7
+{
+	background-color:rgba(255,215,0,0.70);
+}
+#Titulo1
+{
+	font-family: Trebuchet MS;
+}
+#Titulo2
+{
+	font-family: Trebuchet MS;
+}
+#Titulo3
+{
+	font-family: Trebuchet MS;
+	color:black;
+}
+#Titulo5
+{
+	font-family: Trebuchet MS;
+	color:white;
+}
+#FilaContenedor
+{
+	/*position: relative;*/
+}
+
+#ImagenFormulario
+{
+	border-radius:10px;
+
+}
+
+#increibles
+{
+	color:#3aa655;
+}
+#Titulo4
+{
+	font-family: Trebuchet MS;
+	color:black;
+}
+
+#plan1
+{
+	border-style: solid;
+	border-width:1px;
+	border-radius:10px;
+		
+}
+#plan2
+{
+	border-style: solid;
+	border-width:1px;
+	border-radius:10px;
+}
+#plan3
+{
+	border-style: solid;
+	border-width:1px;
+	border-radius:10px;
+}
+li
+{
+	font-family: Trebuchet MS;
+}
+#IMG
+{
+	border-radius:10px;
+}
+#IMG1
+{
+	border-radius:10px;
+}
+#IMG2
+{
+	border-radius:10px;
+}
+#popular
+{
+	background-color:#3aa655;
+	font-family: Trebuchet MS;
+	color:white;
+}
+#tansolo1
+{
+	background-size: 100% 50%; 	
+	background-color:#3aa655;
+	font-family: Trebuchet MS;
+	color:white;
+}
+#UDI
+{
+	font-family: Trebuchet MS;
+}
+#lista1
+{
+	font-size:15px;
+}
+#tansolo2
+{
+	background-size: 100% 50%; 	
+	background-color:#3aa655;
+	font-family: Trebuchet MS;
+	color:white;
+}
+#EPD
+{
+	font-family: Trebuchet MS;
+}
+#lista2
+{
+	font-size:15px;
+}
+#tansolo3
+{
+	background-size: 100% 50%; 	
+	background-color:#3aa655;
+	font-family: Trebuchet MS;
+	color:white;
+}
+#RPT
+{
+	font-family: Trebuchet MS;
+}
+#lista3
+{
+	font-size:15px;
+}
+#whatsapp
+{
+	background-color:rgba(255,215,0,0.70);
+	border-radius:20px;
+}
+#whatsapp2
+{
+	background-color:rgba(255,215,0,0.70);
+	border-radius:20px;
+}
+#paypal
+{
+	margin:auto;
+	width:50%;
+}
+#banco
+{
+	margin:auto;
+	width:50%;
+}
+#youtube
+{
+	margin:auto;
+}
+#boton
+{
+	background-color:rgba(255,215,0,0.80);
+	color:black;
+	font-size: 15px;
+	border:none;
+}
+#registrate
+{
+	font-size: 18px;
+}
+#registrate
+{
+	background-color:rgba(255,215,0,0.70);
+	color:black;
+	border:none;
+}
+#informacionboton
+{
+	background-color:rgba(255,215,0,0.70);
+	border:none;
+	color:black;
+}
+#FormularioTelefono1
+{
+	display: none;
+}
+#FormularioTelefono2
+{
+	display: none;
+}
+#contenedorwhatsapp
+{
+	background-color:rgba(255,215,0,0.70);
+	display:none;
+}
+#seccion10
+{
+	background-color:rgba(255,215,0,0.70);
+}
+#seccion2telefono
+{
+	background-color:rgba(255,215,0,0.70);
+	display:none;
+}
+#seccion5telefono
+{
+	background-color:rgba(255,215,0,0.70);
+	display:none;
+}
+#seccion7telefono
+{
+	background-color:rgba(255,215,0,0.70);
+	display:none;
+}
+#seccion10telefono
+{
+	background-color:rgba(255,215,0,0.70);
+	display:none;
+}

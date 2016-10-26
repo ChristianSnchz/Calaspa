@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>CalaSpaCcs</title>
+		<meta charset = "UTF-8">
+		<link rel="stylesheet" href="estilos.css">
+		<link rel="stylesheet" href="telefonos.css">
+		<link rel="stylesheet" href="telefonogrande.css">
+		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-84233804-1', 'auto');
+		ga('send', 'pageview');
+
+		</script>
+
+		<script
+			src="https://code.jquery.com/jquery-3.1.0.js"
+			  integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="
+			  crossorigin="anonymous"></script>
+		
+		<script>
+			$(document).ready(function(){
+				
+					$("#popular").hide();
+					$("#tansolo1").hide();
+					$("#tansolo2").hide();
+					$("#tansolo3").hide();
+					$("#quierounplan").hide();
+					$("#registrate").hide();
+
+					$("#seccion5").mouseover(function(){
+
+						$("#registrate").slideDown(500);
+					});
+					
+					$("#PLAN1").hover(function(){
+						
+							$("#tansolo1").stop().fadeIn(1000);
+							$("#lista1").stop().animate({ fontSize:"17px"},200);
+							$("#UDI").css({"text-decoration":"underline","color":"#3aa655"});
+							$("#quierounplan").slideDown(750);
+						
+						},function(){
+							
+							$("#tansolo1").stop().fadeOut(600);
+							$("#lista1").stop().animate({ fontSize:"16px"},200);
+							$("#UDI").css({"text-decoration":"none","color":"black"});
+							
+							});
+					$("#PLAN2").hover(function(){
+						
+							$("#popular").stop().fadeIn(1000);
+							$("#tansolo2").stop().fadeIn(1000);
+							$("#lista2").stop().animate({ fontSize:"17px"},200);
+							$("#EPD").css({"text-decoration":"underline","color":"#3aa655"});
+							$("#quierounplan").slideDown(750);
+						
+						},function(){
+							$("#popular").stop().fadeOut(600);
+							$("#tansolo2").stop().fadeOut(750);
+							$("#lista2").stop().animate({ fontSize:"16px"},200);
+							$("#EPD").css({"text-decoration":"none","color":"black"});
+							
+							});
+					$("#PLAN3").hover(function(){
+						
+							$("#tansolo3").stop().fadeIn(1000);
+							$("#lista3").stop().animate({ fontSize:"16px"},200);
+							$("#RPT").css({"text-decoration":"underline","color":"#3aa655"});
+							$("#quierounplan").slideDown(750);
+						
+						},function(){
+						
+							$("#tansolo3").stop().fadeOut(750);
+							$("#lista3").stop().animate({ fontSize:"15px"},200);
+							$("#RPT").css({"text-decoration":"none","color":"black"});
+							
+							});
+					$("#video").hover(function(){
+
+							$("#whatsapp2").stop().animate({width:"230px" });
+
+					},function(){
+
+							$("#whatsapp2").stop().animate({width:"200px" });
+
+					});
+				
+				
+										});
+		</script>
+		
+	</head>
+	
+	
+	<body>
+	
+		
+			<div class="container-fluid" class="row" id="seccion1">
+				
+				<div class="container">
+					<div class="row" >
+						<img src="logo.png" class="img-responsive" id="Logo">
+					</div>
+					<div class="row">
+						<h1 class="text-center" id="Titulo1">El sitio perfecto para relajarte y consentirte como te mereces </h1>
+					</div>
+					<div class="row">
+						<h3 class="text-center" id="Titulo2">Tenemos tratamientos de relajacion y belleza diseñados para hacerte sentir una experiencia unica</h3>
+					</div>
+					
+
+				</div>
+					<div class="row" id="FilaCotenedor">
+						<div class="col-xs-12 col-sm-7 col-md-6 col-md-offset-1" class="container-fluid" id="contenedorimagen">
+						<img src="formulario.jpg" class="img-responsive" id="ImagenFormulario">
+						</div>
+						<div class="col-xs-12 col-sm-5 col-md-4">
+							<form action="1erformulario.php" method="post" class="form-horizontal" id="formulario">
+								<h3 id="Titulo3" class="text-center" > <strong> Envíanos tus datos y te daremos más información </strong> </h3>
+									</br></br>
+									<div  class="form-group">
+										<div class="col-xs-12 col-sm-12 col-md-12">
+											<input name="nombre" type="name" class="form-control" placeholder="Tu Nombre" required>
+										</div>
+									</div>
+						
+							<div class="form-group">
+								<div class="col-xs-12">
+									<input name="correo" type="email" class="form-control" placeholder="Email" required>
+								</div>
+							</div>
+						
+							<div  class="form-group">
+								<div class="col-xs-12 col-sm-12">
+									<input name="telefono" type="text" class="form-control" placeholder="Telefono" required>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<div class="col-xs-offset-0 col-xs-12 	">
+									<button type="submit" class="btn btn-warning btn-lg btn-block" id="boton"> <strong> Solicitar Información </strong> </button>
+								</div>
+							</div>
+							
+							<div class="text-center">
+							<p id="informacion"> <strong> Información 100% protegida </strong> </p>
+							</div>							
+							</form>
+						</div>
+						
+					</div>
+					</br>
+					<div id="FormularioTelefono1" class="row">
+						<div class="col-xs-12">
+							<h3 id="Titulo3" class="text-center" > <strong> Envíanos tus datos y te daremos más información </strong> </h3>
+						</div>
+						<div class="col-xs-12" style="text-align:center">
+						<a href="#ventana1" type="submit" class="btn-success btn-lg" data-toggle="modal" id="BotonFormulario">Solicitar informacion</a>
+						</br></br>
+						</div>
+					</div>
+					<div class="container-fluid" class="row" id="seccion2">
+				
+					</br>
+					<div class="row">
+						<h2 class="text-center " id="Titulo1"> Tenemos planes <strong id="increibles">increíbles</strong> para que puedas compartir un dia de spa con esa persona especial </h2>
+					</div>
+					<div class="row" id="banner1">
+						<h4 class="text-center" id="Titulo4"> Una vez nos contactes, planificaremos contigo los detalles para personalizar tu visita </h4>
+					</div>
+					</br>
+				
+					</div>
+			
+			</div>
+		
+		<div class="container-fluid" class="row" id="seccion2telefono">
+				</br>
+					<div class="row">
+						<h2 class="text-center " id="Titulo1"> Tenemos planes <strong id="increibles">increíbles</strong> para que puedas compartir un dia de spa con esa persona especial </h2>
+					</div>
+					<div class="row" id="banner1">
+						<h3 class="text-center" id="Titulo4"> Una vez nos contactes, planificaremos contigo los detalles para personalizar tu visita </h3>
+					</div>
+					</br>
+		</div> 
+			<div class="container-fluid" class="row" id="seccion4">
+				</br></br>
+				<div class="container">
+					<div class="row" id ="contenedorbotonplan">
+						<div class="col-xs-12" style="text-align:center">
+						<a href="#ventana1" type="submit"  class="btn btn-success btn-lg " data-toggle="modal" id="quierounplan">Quiero un plan</a>
+						</br></br>
+						</div>
+
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-4" id="PLAN1" >
+							<img src="44.jpg" class="img-responsive" id="IMG">
+								<div id="plan1">
+									<h3 class="text-center" id="UDI" >Paquetes de Spa</h3>
+										
+										<p id="lista1" class="text-center">Te damos la oportunidad de tener un momento para ti y desconectarte de todo.</br>Disfruta
+										masajes, envolturas, exfoliaciónes, cenas en pareja y mucho mas de todo lo que preparamos para ti</br></br></p>
+
+								</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-4" id="PLAN3">
+							<img src="33.jpg" class="img-responsive" id="IMG2">
+							<div id="plan3">
+								<h3 class="text-center" id="RPT">Eventos para grupos</h3>
+ 
+									<p class="text-center" id="lista3">Porque una experiencia es mejor si estas con tus amigas, diseñados planes con tratamientos de spa y belleza para que disfruten y se diviertan. Celebra con nosotros dias de amigas, despedidas de soltera y todo lo que quieras</br></br> </p>
+								
+							</div>
+						</div>
+
+
+
+
+						<div class="col-xs-12 col-sm-4" id="PLAN2">
+							<img src="66.jpg" class="img-responsive" id="IMG1">
+							<div id="plan2">
+								<h3 class="text-center" id="EPD">Tratamientos de belleza</h3>
+ 
+									<p class="text-center" id="lista2">Tenemos tecnicas especiales para cuidar y revitalizar tu rostro. Ademas con nuestros tratamientos estéticos te ayudamos 
+									a conseguir el cuerpo que deseas</br></br></br> </p>
+								
+							</div>
+						</div>
+					
+					</div>
+				
+				</div>
+				</br>	
+			</div>
+			<section class="container-fluid" class="row" id="contenedorwhatsapp">
+				<div class="container">
+					<div class="row">
+						<h4 class="text-center" id="Titulo6">Más Información</h4>
+							<img src="wp.png" id="wp" class="img-responsive">
+							<img src="wp2.png" id="wp" class="img-responsive">
+						
+					</div>
+					
+				</div>
+			</section>
+			<section class="container-fluid" class="row" id="seccion3">
+				<div class="container">
+					</br>
+					<div class="row" >
+						<div class="col-sm-3 col-sm-offset-9" id="whatsapp">
+							<h4 class="text-center" id="Titulo6"> <strong> Más Información </strong></h4>
+							<img src="wp.png" id="wp" class="img-responsive">
+							<img src="wp2.png" id="wp" class="img-responsive">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-4 col-md-4 col-md-offset-1 ">
+							<form action="2doformulario.php" method="post" class="form-horizontal" id="formulario2">
+									<div  class="form-group">
+										<div class="col-xs-12 col-sm-12 col-md-12">
+											<input name="nombre" type="name" class="form-control" placeholder="Tu Nombre" required>
+										</div>
+									</div>
+						
+							<div class="form-group">
+								<div class="col-xs-12 col-sm-12">
+									<input name="correo" type="email" class="form-control" placeholder="Email" required>
+								</div>
+							</div>
+						
+							<div  class="form-group">
+								<div class="col-xs-12 col-sm-12">
+									<input name="telefono" type="text" class="form-control" placeholder="Telefono" required>
+								</div>
+							</div>
+						
+							<div class="form-group">
+								<div class="col-xs-offset-0 col-xs-12 	">
+									<button type="submit" class="btn btn-success btn-lg btn-block" id="informacionboton">Información</button>
+								</div>
+							</div>
+							
+							<div class="text-center">
+							<p id="informacion"> <strong> Información 100% protegida </strong> </p>
+							</div>							
+							</form>
+						</div>
+						<div class="col-xs-12 col-sm-8 col-md-6 col-md-offset-1">
+							<h2 id="Titulo5" class="text-center"> En caso de que quieras dar un paquete como obsequio podemos darte una gift card y un pastel de cumpleaños y mas sorpresas para hacer tu regalo aun mas especial</h2>
+						</div>
+						
+					</div>
+					<div id="FormularioTelefono2" class="row">
+						</br>
+						<div class="col-xs-12" style="text-align:center">
+						<a href="#ventana1" type="submit" class="btn-success btn-lg" data-toggle="modal" id="BotonFormulario">Informacion</a>
+						</div>
+						</br></br>
+					</div>
+					
+				</div>
+				</br>
+				<section class="container-fluid" class="row" id="seccion5">
+				<div class="container-fluid">
+					<div class="row">
+						<h1 class="text-center " id="Titulo1"> <strong>Contacto</strong> </h1>
+					</div>
+					<div class="row" >
+						<div class="col-xs-6" id="direccion">
+                            <h2 class="text-left">Direccion:</h2>
+                            <h3 class="text-left">Av. Luis de Camoens C. C. Xpress Torre Xpress Piso 4 Nro 406. </br>Macaracuay – Caracas</h3>
+						</div>
+						<div class="col-xs-4 col-xs-offset-1" id="direccion" >
+                            <h2 class="text-left">Telefono:</h2>
+                            <h3 class="text-left">0212-421.15.39</h3>
+                            <h3 class="text-left">0424-126.01.42</h3>
+                            <h3 class="text-left">0212-710.21.71</h3>
+                            <h2 class="text-left">Email:</h2>
+                            <h3 class="text-left">info@calaspa.net</h3>
+						
+						</div>
+					</div>
+					</br>
+					<div class="row" style="text-align:center">
+						<a href="#ventana1" type="submit" class="btn-success btn-lg" data-toggle="modal">Quiero comprar</a>
+					</div>
+					</br>
+					
+				</div>
+				</section>
+			</section >
+			 <section class="container-fluid" class="row" id="seccion5telefono">
+				<div class="container-fluid">
+					<div class="row">
+						<h1 class="text-center " id="Titulo1"> <strong>Contacto</strong> </h1>
+					</div>
+					<div class="row" >
+						
+                       <div class="col-xs-12" >
+                            <h3 class="text-left">Direccion:</h3>
+                            <h4 class="text-left">Av. Luis de Camoens C. C. Xpress Torre Xpress Piso 4 Nro 406. </br>Macaracuay – Caracas</h4>
+						</div>
+						<div class="col-xs-12" >
+                            <h3 class="text-left">Telefono:</h3>
+                            <h4 class="text-left">0212-421.15.39</h4>
+                            <h4 class="text-left">0424-126.01.42</h4>
+                            <h4 class="text-left">0212-710.21.71</h4>
+                            <h3 class="text-left">Email:</h3>
+                            <h4 class="text-left">info@calaspa.net    </h4>
+						</div> 
+					</div>
+					</br>
+					<div class="row" style="text-align:center">
+						<a href="#ventana1" type="submit" class="btn-success btn-lg" data-toggle="modal">Quiero comprar</a>
+					</div>
+					</br>
+					
+				</div>
+			</section> 
+			<div class="modal fade" id="ventana1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button tyle="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						</div>
+						<div class="modal-body">
+							<h1 id="Titulo1" class="text-center">Envíanos tus datos y te contáctaremos</h1>
+							</br>
+							<form action="2doformulario.php" method="post" class="form-horizontal" id="formulario3">
+									</br>
+									<div  class="form-group">
+										<div class="col-xs-12 col-sm-12 col-md-12">
+											<input name="nombre" type="name" class="form-control" placeholder="Tu Nombre" required>
+										</div>
+									</div>
+						
+							<div class="form-group">
+								<div class="col-xs-12 col-sm-">
+									<input name="correo" type="email" class="form-control" placeholder="Email" required>
+								</div>
+							</div>
+						
+							<div  class="form-group">
+								<div class="col-xs-12 col-sm-12">
+									<input name="telefono" type="text" class="form-control" placeholder="Telefono" required>
+								</div>
+							</div>
+						
+							<div class="form-group">
+								<div class="col-xs-offset-0 col-xs-12 	">
+									<button type="submit" class="btn btn-success btn-lg btn-block" id="informacion">Enviar</button>
+								</div>
+							</div>
+							
+							<div class="text-center">
+							<p id="informacion"> <strong> Información 100% protegida </strong> </p>
+							</div>							
+							</form>
+						</div>
+					</div>		
+				</div>
+				
+			</div>	
+		
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</body>
+</html>

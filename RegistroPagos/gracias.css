@@ -1,0 +1,31 @@
+body{
+	
+	background-image: url(background.jpg);	
+	background-size: 100vw 100vh; 
+	margin: 0;
+	}
+
+
+#logo
+{
+	width: 20%;
+	border-radius: 10%;
+	opacity:0.8;
+}
+h1
+{
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+	background: rgba(255,215,0,0.70);
+
+	font-family: Trebuchet MS;;
+}
+#gracias
+{
+	text-align: center;
+	color: white;
+	background: rgba(255,215,0,0.90);
+	font-family: Trebuchet MS;;
+	font-size:55px;
+}

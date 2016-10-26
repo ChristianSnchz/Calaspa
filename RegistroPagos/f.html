@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Registro de pagos </title>
+		<meta charset = "UTF-8">
+		<link rel="stylesheet" href="estilos.css">
+		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+		<script
+			src="https://code.jquery.com/jquery-3.1.0.js"
+			  integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="
+			  crossorigin="anonymous"></script>
+		
+		<script>
+		
+		
+			$(document).ready(function(){
+				
+					$("#send").click(function(){
+
+						alert("RECUERDAS QUE DEBES ADJUNTAR EL COMPROBANTE PARA ENVIAR ");
+					});
+				
+				
+				});
+		</script>
+		
+		
+		
+	</head>
+	<body>
+		
+			<div class="container-fluid" class="row" id="seccion2">
+				<div class="container">
+					<div class="row">
+						<img src="logo.png" id="logo1" class="img-responsive">
+					</div>
+				</div>
+			</div>
+		
+			<div class="container-fluid" class="row" id="F1">
+			
+			<div class="container">
+				<div class="col-xs-12 col-sm-12 col-md-12 ">
+						</br>
+						<form name="formulario" action="enviar.php" method="post" class="form-horizontal" id="formulario" enctype="multipart/form-data">							
+								<h2 id="titulo" class="col-xs-12 " > Registra tu pago </h2>
+									<div  class="form-group">
+										<div class="col-xs-12 col-sm-12 col-md-12">
+											<input name="nombre" type="name" class="form-control" placeholder="Nombre" required>
+										</div>
+									</div>
+						
+							<div class="form-group">
+								<div class="col-xs-12 col-sm-">
+									<input name="correo" type="email" class="form-control" placeholder="Email" required>
+								</div>
+							</div>
+						
+						
+							<div  class="form-group">
+								<div class="col-xs-12 col-sm-12">
+									<input name="telefono" type="text" class="form-control" placeholder="Telefono" required>
+								</div>
+							</div>
+							
+							
+							<div  class="form-group">
+								<div class="col-xs-12 col-sm-12">
+									<input name="precio" type="text" class="form-control" placeholder="Monto" required>
+								</div>
+							</div>
+							
+							<div  class="form-group">
+								<div class="col-xs-12 col-sm-12">
+									<input name="agente" type="text" class="form-control" placeholder="Agente que lo atendio">
+								</div>
+							</div>
+							
+							<div  class="form-group">
+								<div class="col-xs-12 col-sm-12">
+									<p id="titulo"> Adjunte su comprobante de pago (Obligatorio) <input type="file" class="btn btn-primary btn-lg btn-block" id="file" name="archivo" onclick="document.formulario.enviar.disabled=!document.formulario.enviar.disabled" required ></p>
+								</div>
+							</div>
+						
+							
+							<div class="form-group">
+								<div class="col-xs-offset-0 col-xs-12 	">
+									<button  name="enviar" type="submit" class="btn btn-primary btn-lg btn-block" id="send" disabled >Enviar</button>
+								</div>
+							</div>
+							
+							<div class="text-center">
+							<p id="informacion"> Informacion 100% protegida </p>
+							</div>							
+						</form>
+						</br>
+					
+					</div>
+				</div>
+			</div>
+							
+		
+	
+	</body>
+</html> 

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>CalaSpaCcs</title>
+		<meta charset = "UTF-8">
+		<link rel="stylesheet" href="estilos.css">
+		<link rel="stylesheet" href="telefonos.css">
+		<link rel="stylesheet" href="telefonogrande.css">
+		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+		
+		<script
+			src="https://code.jquery.com/jquery-3.1.0.js"
+			  integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="
+			  crossorigin="anonymous"></script>
+		<script>
+			$(document).ready(function(){
+				
+					$("#popular").hide();
+					$("#tansolo1").hide();
+					$("#tansolo2").hide();
+					$("#tansolo3").hide();
+					$("#quierounplan").hide();
+					$("#registrate").hide();
+
+					$("#seccion5").mouseover(function(){
+
+						$("#registrate").slideDown(500);
+					});
+					
+					$("#PLAN1").hover(function(){
+						
+							$("#tansolo1").stop().fadeIn(1000);
+							$("#lista1").stop().animate({ fontSize:"16px"},200);
+							$("#UDI").css({"text-decoration":"underline","color":"#3aa655"});
+							$("#quierounplan").slideDown(750);
+						
+						},function(){
+							
+							$("#tansolo1").stop().fadeOut(600);
+							$("#lista1").stop().animate({ fontSize:"15px"},200);
+							$("#UDI").css({"text-decoration":"none","color":"black"});
+							
+							});
+					$("#PLAN2").hover(function(){
+						
+							$("#popular").stop().fadeIn(1000);
+							$("#tansolo2").stop().fadeIn(1000);
+							$("#lista2").stop().animate({ fontSize:"16px"},200);
+							$("#EPD").css({"text-decoration":"underline","color":"#3aa655"});
+							$("#quierounplan").slideDown(750);
+						
+						},function(){
+							$("#popular").stop().fadeOut(600);
+							$("#tansolo2").stop().fadeOut(750);
+							$("#lista2").stop().animate({ fontSize:"15px"},200);
+							$("#EPD").css({"text-decoration":"none","color":"black"});
+							
+							});
+					$("#PLAN3").hover(function(){
+						
+							$("#tansolo3").stop().fadeIn(1000);
+							$("#lista3").stop().animate({ fontSize:"16px"},200);
+							$("#RPT").css({"text-decoration":"underline","color":"#3aa655"});
+							$("#quierounplan").slideDown(750);
+						
+						},function(){
+						
+							$("#tansolo3").stop().fadeOut(750);
+							$("#lista3").stop().animate({ fontSize:"15px"},200);
+							$("#RPT").css({"text-decoration":"none","color":"black"});
+							
+							});
+					$("#video").hover(function(){
+
+							$("#whatsapp2").stop().animate({width:"230px" });
+
+					},function(){
+
+							$("#whatsapp2").stop().animate({width:"200px" });
+
+					});
+				
+				
+										});
+		</script>
+	</head>	
+	
+		<body>
+			<div class="container-fluid" class="row" id="seccion1">
+				
+				<div class="container">
+					<div class="row" >
+						<img src="logo.png" class="img-responsive" id="Logo">
+					</div>
+					<div class="row">
+						<h1 class="text-center" id="Titulo1">El regalo perfecto para tu amiga que se casa en Venezuela </h1>
+					</div>
+					<div class="row">
+						<h3 class="text-center" id="Titulo2">Te asesoramos para que quedes muy bien y regales una experiencia inolvidable</h3>
+						</br>
+					</div>
+					
+
+					</div>
+					<div class="row" id="FilaCotenedor">
+						<div class="col-xs-12 col-sm-7 col-md-6 col-md-offset-1" class="container-fluid" id="contenedorimagen">
+						<img src="formulario.jpg" class="img-responsive" id="ImagenFormulario">
+						</div>
+						<div class="col-xs-12 col-sm-5 col-md-4">
+							<form action="1erformulario.php" method="post" class="form-horizontal" id="formulario">
+								<h3 id="Titulo3" class="text-center" > <strong> Envíanos tus datos y te daremos más información </strong> </h3>
+									</br></br>
+									<div  class="form-group">
+										<div class="col-xs-12 col-sm-12 col-md-12">
+											<input name="nombre" type="name" class="form-control" placeholder="Tu Nombre" required>
+										</div>
+									</div>
+						
+							<div class="form-group">
+								<div class="col-xs-12 col-sm-">
+									<input name="correo" type="email" class="form-control" placeholder="Email" required>
+								</div>
+							</div>
+						
+							<div  class="form-group">
+								<div class="col-xs-12 col-sm-12">
+									<input name="telefono" type="text" class="form-control" placeholder="Telefono" required>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<div class="col-xs-offset-0 col-xs-12 	">
+									<button type="submit" class="btn btn-warning btn-lg btn-block" id="boton"> <strong> Solicitar Información </strong> </button>
+								</div>
+							</div>
+							
+							<div class="text-center">
+							<p id="informacion"> <strong> Información 100% protegida </strong> </p>
+							</div>							
+							</form>
+						</div>
+						
+					</div>
+					</br>
+					<div id="FormularioTelefono1" class="row">
+						<div class="col-xs-12">
+							<h3 id="Titulo3" class="text-center" > <strong> Envíanos tus datos y te daremos más información </strong> </h3>
+						</div>
+						<div class="col-xs-12" style="text-align:center">
+						<a href="#ventana1" type="submit" class="btn-success btn-lg" data-toggle="modal" id="BotonFormulario">Solicitar informacion</a>
+						</br></br>
+						</div>
+					</div>
+					
+					<div class="container-fluid" class="row" id="seccion2">
+				
+					</br>
+					<div class="row">
+						<h2 class="text-center " id="Titulo1"> Tenemos planes <strong id="increibles">increíbles</strong> para ese día especial </h2>
+					</div>
+					<div class="row" id="banner1">
+						<h4 class="text-center" id="Titulo4"> Una vez nos contactes, planificaremos contigo los detalles para personalizar este obsequio con el que quedarás muy bien </h4>
+					</div>
+					</br>
+				
+					</div>
+			
+			</div>
+			<div class="container-fluid" class="row" id="seccion2telefono">
+				<div class="container-fluid">
+					</br>
+					<div class="row">
+						<h2 class="text-center " id="Titulo1"> Tenemos planes <strong id="increibles">increíbles</strong> para ese día especial </h2>
+					</div>
+					<div class="row" id="banner1">
+						<h4 class="text-center" id="Titulo4"> Una vez nos contactes, planificaremos contigo los detalles para personalizar este obsequio con el que quedarás muy bien </h4>
+					</div>
+					</br>
+				</div>
+		</div> 
+			<div class="container-fluid" class="row" id="seccion4">
+				</br></br>
+				<div class="container">
+					<div class="row" id ="contenedorbotonplan">
+						<div class="col-xs-12" style="text-align:center">
+						<a href="#ventana1" type="submit"  class="btn btn-success btn-lg " data-toggle="modal" id="quierounplan">Quiero un plan</a>
+						</br></br>
+						</div>
+
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-4" id="PLAN1" >
+							<img src="1.jpg" class="img-responsive" id="IMG">
+								<div id="plan1">
+									<h4 class="text-center" id="UDI" > Un día inolvidable</h4>
+										<ul id="lista1"> 
+										<li> Masaje relajante </li>
+										<li> Masaje con piedras volcánicas</li>
+										<li> Hidratación con chocolate en manos y pies </li>
+										<li> Masaje, exfoliación e hidratación facial </li>
+										<li> Vista panorámica </li>
+
+									</ul>
+									<h4 class="text-center" id="tansolo1"> Por tan solo </h4>
+									<h4 class="text-center"> <strong id="increibles"> $ 29.590 pesos </strong> </h4>
+								</div>
+						</div>
+						<div class="col-xs-12 col-sm-4" id="PLAN2">
+							<img src="2.jpg" class="img-responsive" id="IMG1">
+							<div id="plan2">
+								<h4 class="text-center" id="popular"> El más popular </h4>
+								<h4 class="text-center" id="EPD"> Escape para dos</h4>
+								<ul id="lista2"> 
+									<li> Envoltura de chocolate en todo el cuerpo </li>
+									<li> Exfoliación corporal son sales  minerales </li>
+									<li> Masaje relajante </li>
+									<li> Masaje con piedras volcánicas  </li>
+									<li> Masaje exfoliación  e hidratación facial </li>
+									<li> Vista panorámica </li>
+								</ul>
+								<h4 class="text-center" id="tansolo2"> Por tan solo </h4>
+								<h4 class="text-center"> <strong id="increibles"> $ 39.450 pesos </strong>  </h4>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-4" id="PLAN3" >
+							<img src="3.jpg" class="img-responsive" id="IMG2">
+							<div id="plan3">
+								<h4 class="text-center" id="RPT" > Relax por tres</h4>
+								<ul id="lista3"> 
+									<li> Exfoliación corporal con sales minerales </li>
+									<li> Masaje relajante </li>
+									<li> Masaje con piedras volcánicas  </li>
+									<li> Hidratación con chocolate en manos y pies  </li>
+									<li> Masaje exfoliación e hidratación facial </li>
+									<li> Vista panorámica</li>
+								</ul>
+								<h4 class="text-center" id="tansolo3"> Por tan solo </h4>
+								<h4 class="text-center">  <strong id="increibles"> $ 55.890 pesos </strong>  </h4>
+							</div>
+						</div>
+					
+					</div>
+				
+				</div>
+				</br>	
+			</div>
+			<section class="container-fluid" class="row" id="contenedorwhatsapp">
+				<div class="container">
+					<div class="row">
+						<h4 class="text-center" id="Titulo6">Más Información</h4>
+							<img src="wp.png" id="wp" class="img-responsive">
+						
+					</div>
+					
+				</div>
+			</section>
+			
+			<section class="container-fluid" class="row" id="seccion3">
+				<div class="container">
+					</br>
+					<div class="row" >
+						<div class="col-sm-3" id="whatsapp">
+							<h4 class="text-center" id="Titulo6">Más Información</h4>
+							<img src="wp.png" id="wp" class="img-responsive">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-4 col-sm-offset-7">
+							<form action="2doformulario.php" method="post" class="form-horizontal" id="formulario2">
+									<h3 id="Titulo5" class="text-center"> <strong>Puedes incluir un espumante y sushi para hacer la sorpresa aun mejor</strong></h3>
+									</br>
+									<div  class="form-group">
+										<div class="col-xs-12 col-sm-12 col-md-12">
+											<input name="nombre" type="name" class="form-control" placeholder="Tu Nombre" required>
+										</div>
+									</div>
+						
+							<div class="form-group">
+								<div class="col-xs-12 col-sm-">
+									<input name="correo" type="email" class="form-control" placeholder="Email" required>
+								</div>
+							</div>
+						
+							<div  class="form-group">
+								<div class="col-xs-12 col-sm-12">
+									<input name="telefono" type="text" class="form-control" placeholder="Telefono" required>
+								</div>
+							</div>
+						
+							<div class="form-group">
+								<div class="col-xs-offset-0 col-xs-12 	">
+									<button type="submit" class="btn btn-success btn-lg btn-block" id="informacionboton">Información</button>
+								</div>
+							</div>
+							
+							<div class="text-center">
+							<p id="informacion"> <strong> Información 100% protegida </strong> </p>
+							</div>							
+							</form>
+						</div>
+					</div>
+					<div id="FormularioTelefono2" class="row">
+						</br>
+						<div class="col-xs-12" style="text-align:center">
+						<a href="#ventana1" type="submit" class="btn-success btn-lg" data-toggle="modal" id="BotonFormulario">Informacion</a>
+						</div>
+						</br></br>
+					</div>
+					
+				</div>
+				</br>
+				<section class="container-fluid" class="row" id="seccion5">
+				<div class="container-fluid">
+					<div class="row">
+						<h2 class="text-center " id="Titulo1"> Te mostramos en este <strong id="increibles">vídeo ilustrativo</strong>,  los rápidos y sencillos pasos para disfrutar de nuestros servicios.</h2>
+						</br>
+					</div>
+					
+				</div>
+				</section>
+			</section >
+			<section class="container-fluid" class="row" id="seccion5telefono">
+				<div class="container-fluid">
+					<div class="row">
+						<h2 class="text-center " id="Titulo1"> Te mostramos en este <strong id="increibles">vídeo ilustrativo</strong>,  los rápidos y sencillos pasos para disfrutar de nuestros servicios.</h2>
+						</br>
+					</div>
+					
+				</div>
+			</section>
+			<section class="container-fluid" class="row" id="seccion6">
+				<div class="container">
+					<div class="row" >
+						<br>
+						<div class="col-xs-3">
+						<a href="#ventana1" type="submit"  class="btn btn-warning btn-lg btn-block" data-toggle="modal" id="registrate">Registrate</a>
+						</div>
+					</div>
+					</br>
+					<div class="row" id="video">
+						<div class="col-xs-12" style="text-align:center">
+						<iframe width="65%" height="370" src="https://www.youtube.com/embed/Wc6ylsjRRZU" frameborder="0" allowfullscreen id="youtube"></iframe>			
+						</div>
+
+					</div>
+					<div class="row" >
+						<div class=" col-xs-12 col-sm-3 col-sm-offset-9" id="whatsapp2" >
+							<h4 class="text-center" id="titulodewhatsapp2">Más Información</h4>
+							<img src="wp.png" id="wp" class="img-responsive">
+						</div>
+					</div>
+				
+				</div>
+				</br>
+				<div class="container-fluid" id="seccion7">
+					</br>
+					<div class="row">
+						<h1 class="text-center " id="Titulo1"> <strong>Medios de pago</strong> </h1>
+					</div>
+					<div class="row" >
+						<div class="col-xs-6" >
+							<img src="paypal.png"class="img-responsive" id="paypal">
+						</div>
+						<div class="col-xs-6" >
+							<img src="banco.png"class="img-responsive" id="banco">
+						</div>
+					</div>
+					</br>
+					<div class="row" style="text-align:center">
+						<a href="#ventana1" type="submit" class="btn-success btn-lg" data-toggle="modal">Quiero comprar</a>
+					</div>
+					</br>
+				</div>
+				<section class="container-fluid" class="row" id="seccion10">
+				<div class="container">
+					<div class="row">
+						<h1 class="text-center " id="Titulo1"> <strong>Vive la experiencia Cala</strong></h1>
+						</br>
+					</div>
+					
+				</div>
+			</section>
+			</section>
+			
+			<section class="container-fluid" class="row" id="seccion7telefono">
+				<div class="container-fluid">
+					</br>
+					<div class="row">
+						<h1 class="text-center " id="Titulo1"> <strong>Medios de pago</strong> </h1>
+					</div>
+					<div class="row" >
+						<div class="col-xs-6" >
+							<img src="paypal.png"class="img-responsive" id="paypal">
+						</div>
+						<div class="col-xs-6" >
+							<img src="banco.png"class="img-responsive" id="banco">
+						</div>
+					</div>
+					</br>
+					<div class="row" style="text-align:center">
+						<a href="#ventana1" type="submit" class="btn-success btn-lg" data-toggle="modal">Quiero comprar</a>
+					</div>
+					</br>
+				</div>
+			</section> 
+			
+			
+			<section class="container-fluid" class="row" id="seccion10telefono">
+				<div class="container">
+					<div class="row">
+						<h1 class="text-center " id="Titulo1"> <strong>Vive la experiencia Cala
+						</strong></h1>
+						</br>
+					</div>
+					
+				</div>
+			</section>
+			
+			<section class="container-fluid" class="row" id="seccion6">
+				<div class="container">
+					</br>
+					<div class="row" id="video">
+						<div class="col-xs-12" style="text-align:center">
+						<iframe width="65%" height="370" src="https://www.youtube.com/embed/Wc6ylsjRRZU" frameborder="0" allowfullscreen id="youtube"></iframe>			
+						</div>
+
+					</div>
+					
+				</div>
+				</br>
+			</section>
+			
+		<div class="modal fade" id="ventana1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button tyle="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						</div>
+						<div class="modal-body">
+							<h1 id="Titulo1" class="text-center">Envíanos tus datos y te contactaremos</h1>
+							</br>
+							<form action="2doformulario.php" method="post" class="form-horizontal" id="formulario3">
+									</br>
+									<div  class="form-group">
+										<div class="col-xs-12 col-sm-12 col-md-12">
+											<input name="nombre" type="name" class="form-control" placeholder="Tu Nombre" required>
+										</div>
+									</div>
+						
+							<div class="form-group">
+								<div class="col-xs-12 col-sm-">
+									<input name="correo" type="email" class="form-control" placeholder="Email" required>
+								</div>
+							</div>
+						
+							<div  class="form-group">
+								<div class="col-xs-12 col-sm-12">
+									<input name="telefono" type="text" class="form-control" placeholder="Telefono" required>
+								</div>
+							</div>
+						
+							<div class="form-group">
+								<div class="col-xs-offset-0 col-xs-12 	">
+									<button type="submit" class="btn btn-success btn-lg btn-block" id="informacion">Enviar</button>
+								</div>
+							</div>
+							
+							<div class="text-center">
+							<p id="informacion"> <strong> Información 100% protegida </strong> </p>
+							</div>							
+							</form>
+						</div>
+					</div>		
+				</div>
+				
+			</div>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		</body>
+</html>

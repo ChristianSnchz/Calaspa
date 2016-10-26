@@ -1,0 +1,192 @@
+
+@media (max-width:480px) {
+    #Titulo1
+	{
+        font-size:18px;
+    }
+    #Titulo2
+    {
+    	font-size:15px;
+    }
+     #Titulo3
+    {
+    	font-size:15px;
+    }
+     #Titulo4
+    {
+    	font-size:12px;
+    }
+    #whatsapp
+    {
+    	display:none;
+    	width: 80%;
+    }
+    #whatsapp2
+    {
+    	width: 80%;
+    }
+    #titulodewhatsapp2
+    {
+    	font-size: 10px;
+    }
+    #youtube
+    {
+    	height: 200px;
+    }
+    #paypal
+    {
+    	width: 100%;
+    }
+    #banco
+    {
+    	width: 100%;
+    }
+    #seccion1
+	{
+		background-size: 100%;
+		background-repeat: no-repeat;
+
+	}
+	#seccion3
+	{	
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}	
+	#seccion4
+	{
+		background-image:none;
+	}
+	#seccion6
+	{
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+	/* #PLAN1
+	{
+		background-image:url(seccion4.jpg);
+		background-size: 100% 100%; 
+	}
+	#PLAN2
+	{
+		background-image:url(seccion4.jpg);
+		background-size: 100% 100%; 
+	}
+	#PLAN3
+	{
+		background-image:url(seccion4.jpg);
+		background-size: 100% 100%; 
+	}*/
+
+	#seccion6
+	{
+	background-repeat: no-repeat;
+
+	}
+	  #Titulo5
+    {
+    	font-size:11px;
+    	color:black;
+    }
+    #informacionboton
+    {
+    	font-size: 10px;
+    }
+
+     #formulario
+	{
+		display: none;
+	}
+	#boton
+	{
+		font-size: 10px;
+	}
+   #formulario2
+	{
+		display: none;
+	}
+
+#informacion
+	{
+		font-size: 10px;
+	}
+#Titulo6
+	{
+		font-size: 13px;
+	}
+#lista1
+	{
+		font-size: 11px;
+	}
+#lista2
+	{
+		font-size: 11px;
+	}
+#lista3
+	{
+		font-size: 11px;
+	}
+#BotonFormulario
+{
+	background-color:rgba(255,215,0,0.70);
+	border:none;
+	color:black;
+}
+#FormularioTelefono1
+{
+	display: inline;
+}
+#FormularioTelefono2
+{
+	display: inline;
+}
+#contenedorbotonplan
+{
+	display:none;
+}
+#quierounplan
+{
+	display:none;
+}
+#contenedorwhatsapp
+{
+	background-color:rgba(255,215,0,0.70);
+	display:block;
+}
+#wp
+{
+	margin:auto;
+	width:60%;
+}
+#seccion2
+{
+	display:none;
+}
+#seccion2telefono
+{
+	display:block;
+}
+#seccion5
+{
+	display:none;
+}
+#seccion5telefono
+{
+	display:block;
+}
+#seccion7
+{
+	display:none;
+}
+#seccion7telefono
+{
+	display:block;
+}
+#seccion10
+{
+	display:none;
+}
+#seccion10telefono
+{
+	display:block;
+}
+}
